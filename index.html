@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D'Andre Collins</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="D'Andre Collins — CS + ITWS student at RPI. Systems, Software, and Data Science.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <a class="brand-link" href="index.html" aria-label="Go to homepage">
+          D'Andre Collins
+        </a>
+        <p class="brand-sub">CS + ITWS @ RPI &nbsp;·&nbsp; Systems &nbsp;·&nbsp; Software &nbsp;·&nbsp; Data Science</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li>
+            <a class="nav-link is-active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="labs/index.html" target="_blank" rel="noopener">Coursework</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <p class="eyebrow">Systems thinking &nbsp;·&nbsp; Software engineering &nbsp;·&nbsp; Data science</p>
+
+          <h1 class="hero-title">
+            I build <span class="accent">precise</span> software
+            and care how it holds up under pressure.
+          </h1>
+
+          <p class="hero-lede">
+            I'm a freshman at RPI pursuing dual degrees in Computer Science and
+            Information Technology &amp; Web Science. My CS focus is Systems and Software
+            engineering. My ITWS focus is Data Science. I'm interested in building
+            solutions that are structured, testable, and honest about their tradeoffs.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn" href="labs/lab02/index.html" target="_blank" rel="noopener">
+              View Resume
+            </a>
+            <a class="btn btn-ghost" href="https://github.com/dandrecollins07-ctrl" target="_blank" rel="noopener">
+              GitHub
+            </a>
+          </div>
+
+          <ul class="quick-facts" aria-label="Quick facts">
+            <li><span class="pill">CS Focus</span> Systems &amp; Software</li>
+            <li><span class="pill">ITWS Focus</span> Data Science</li>
+            <li><span class="pill">Strengths</span> Debugging &nbsp;·&nbsp; Structure &nbsp;·&nbsp; Optimization</li>
+            <li><span class="pill">Location</span> RPI &nbsp;·&nbsp; Troy, NY</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="headshot-card">
+            <div class="headshot-frame">
+              <picture>
+                <source srcset="assets/images/headshot.png">
+                <img class="headshot-img"
+                     src="assets/images/headshot-placeholder.svg"
+                     alt="Headshot of D'Andre Collins">
+              </picture>
+            </div>
+            <div class="headshot-caption">
+              <p class="headshot-name">D'Andre Collins</p>
+              <p class="headshot-role">CS + ITWS &nbsp;·&nbsp; RPI &nbsp;·&nbsp; Class of 2029</p>
+            </div>
+          </div>
+
+          <div class="card highlight">
+            <h2 class="card-title">Now</h2>
+            <p class="card-text">
+              Building on data structures, linear algebra, and web fundamentals.
+              Focused on projects I can walk through clearly, with measurable results.
+            </p>
+          </div>
+
+          <div class="card highlight">
+            <h2 class="card-title">What I value</h2>
+            <p class="card-text">
+              Reliability, precision, and evidence. I like code that makes sense to
+              humans and still holds up under constraints.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRINCIPLES -->
+    <section id="principles" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Principles</h2>
+          <p class="section-subtitle">
+            The rules I follow when I build anything technical.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3 class="card-title">Clarity wins</h3>
+            <p class="card-text">
+              If I can't explain it simply, it isn't finished. I optimize for
+              readable code and maintainable structure first.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Debug with intent</h3>
+            <p class="card-text">
+              I don't guess-and-check. I isolate variables, test assumptions,
+              and follow evidence until the root cause makes sense.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Make it measurable</h3>
+            <p class="card-text">
+              Data exposes reality. I like metrics, tests, and clear definitions
+              of done that keep systems honest.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Projects</h2>
+          <p class="section-subtitle">
+            Work I've shipped and can walk through start to finish.
+          </p>
+        </header>
+
+        <div class="grid-3">
+
+          <article class="card project">
+            <h3 class="card-title">New York Search</h3>
+            <p class="card-text">
+              A local search engine built in C++. Crawls 33 HTML files via
+              recursive DFS, constructs an inverted index using
+              <code>std::map</code>, and ranks results using dual-factor scoring:
+              TF-IDF keyword density combined with backlink-based PageRank.
+              Achieved zero rank error across all autograder test cases.
+            </p>
+            <p class="meta">C++ &nbsp;·&nbsp; STL &nbsp;·&nbsp; Recursion &nbsp;·&nbsp; HTML Parsing &nbsp;·&nbsp; Spring 2026</p>
+          </article>
+
+          <article class="card project">
+            <h3 class="card-title">Inverse Word Search</h3>
+            <p class="card-text">
+              A recursive backtracking solver that constructs letter grids
+              satisfying up to 16 required words across a 10&times;5 search space
+              with forbidden-word constraints. Replaced vector-based tracking
+              with four 64-bit bitmasks, cutting solve time to under 8 seconds
+              on the hardest test case.
+            </p>
+            <p class="meta">C++ &nbsp;·&nbsp; Bitmasks &nbsp;·&nbsp; Constraint Propagation &nbsp;·&nbsp; Spring 2026</p>
+          </article>
+
+          <article class="card project">
+            <h3 class="card-title">Document Analyzer</h3>
+            <p class="card-text">
+              Parsed and analyzed text files to compute word sophistication,
+              pair frequency, and language variety. Implemented Jaccard
+              similarity on extracted word sets to compare writing style
+              across documents.
+            </p>
+            <p class="meta">Python &nbsp;·&nbsp; NLP &nbsp;·&nbsp; Sets &nbsp;·&nbsp; Fall 2025</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOCUS TRACKS -->
+    <section id="focus" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Academic Focus</h2>
+          <p class="section-subtitle">
+            Two degrees, two focus tracks, one direction.
+          </p>
+        </header>
+
+        <div class="grid-3">
+          <article class="card">
+            <h3 class="card-title">CS &nbsp;·&nbsp; Systems &amp; Software</h3>
+            <p class="card-text">
+              Operating systems, software design, and performance engineering.
+              Building software that is structured, testable, and efficient
+              at a systems level.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">ITWS &nbsp;·&nbsp; Data Science</h3>
+            <p class="card-text">
+              Data pipelines, analytics, and applied statistics. Understanding
+              how to extract signal from structure and communicate results clearly.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3 class="card-title">Where they meet</h3>
+            <p class="card-text">
+              Systems that handle data at scale. Software built with
+              performance in mind from the start. That intersection is where
+              I want to work.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Contact</h2>
+          <p class="section-subtitle">
+            Best way to reach me is email. Clear context helps me respond faster.
+          </p>
+        </header>
+
+        <div class="card">
+          <p class="card-text">
+            Email: <a href="mailto:collid7@rpi.edu">collid7@rpi.edu</a>
+          </p>
+          <p class="card-text" style="margin-top: 10px;">
+            Open to: internships, campus opportunities, mentorship, and project collaborations.
+          </p>
+          <p class="card-text" style="margin-top: 10px;">
+            GitHub: <a href="https://github.com/dandrecollins07-ctrl" target="_blank" rel="noopener">github.com/dandrecollins07-ctrl</a>
+          </p>
+          <p class="card-text" style="margin-top: 10px;">
+            LinkedIn: <a href="https://www.linkedin.com/in/d-andre-collins-757039254/" target="_blank" rel="noopener">linkedin.com/in/d-andre-collins</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="future-section">
+      <div class="container future-inner">
+        <h2 class="future-title">This is just the beginning.</h2>
+        <p class="future-highlight">Version 1.0 &nbsp;·&nbsp; More iterations ahead.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="footer-text">&copy; 2026 D'Andre Collins</p>
+      <p class="footer-text">Built with semantic HTML &nbsp;·&nbsp; No frameworks</p>
+    </div>
+  </footer>
+
+</body>
+</html>

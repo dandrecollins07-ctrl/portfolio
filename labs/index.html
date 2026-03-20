@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D'Andre Collins – Coursework</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Coursework labs by D'Andre Collins.">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+    @media (max-width: 700px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+    .lab-top {
+      margin-bottom: 8px;
+    }
+    .lab-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .status {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+    .status-done {
+      color: #6ee7b7;
+      border-color: rgba(110, 231, 183, 0.3);
+      background: rgba(110, 231, 183, 0.08);
+    }
+    .status-progress {
+      color: #fcd34d;
+      border-color: rgba(252, 211, 77, 0.3);
+      background: rgba(252, 211, 77, 0.08);
+    }
+    .lab-number {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--faint);
+      margin: 0 0 6px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <a class="brand-link" href="../index.html" aria-label="Go to homepage">
+          D'Andre Collins
+        </a>
+        <p class="brand-sub">Coursework &amp; Labs</p>
+      </div>
+
+      <nav aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="../index.html">Home</a></li>
+          <li><a class="nav-link is-active" href="index.html">Coursework</a></li>
+          <li><a class="nav-link" href="lab02/index.html">Resume</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="section">
+    <div class="container">
+      <header class="section-head">
+        <h1 class="section-title">Coursework</h1>
+        <p class="section-subtitle">
+          Selected lab work from ITWS coursework. Each lab builds on web fundamentals — structure, scripting, and deployment.
+        </p>
+      </header>
+
+      <div class="grid-2">
+
+        <!-- LAB 1 -->
+        <article class="card">
+          <p class="lab-number">Lab 01</p>
+          <div class="lab-top">
+            <h2 class="card-title">Server Setup &amp; Deployment</h2>
+          </div>
+          <p class="card-text">
+            First site deployment on an Azure virtual machine. Established the
+            publishing workflow, configured remote access via SSH, and served
+            content from a live Linux environment.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="lab01/index.html" target="_blank" rel="noopener">Open Lab 1</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+        <!-- LAB 2 -->
+        <article class="card">
+          <p class="lab-number">Lab 02</p>
+          <div class="lab-top">
+            <h2 class="card-title">Semantic HTML Resume</h2>
+          </div>
+          <p class="card-text">
+            A fully structured resume built with semantic HTML and a dedicated
+            stylesheet. Focused on clean section layout, accessibility, and
+            proper document hierarchy.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="lab02/index.html" target="_blank" rel="noopener">Open Resume</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+        <!-- LAB 3 -->
+        <article class="card">
+          <p class="lab-number">Lab 03</p>
+          <div class="lab-top">
+            <h2 class="card-title">Personal Portfolio Website</h2>
+          </div>
+          <p class="card-text">
+            Iterative personal site design using semantic HTML and shared CSS.
+            Built with a focus on structure, readability, and versioned commits
+            across the full development cycle.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="../index.html" target="_blank" rel="noopener">Open Site</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+        <!-- LAB 4 -->
+        <article class="card">
+          <p class="lab-number">Lab 04</p>
+          <div class="lab-top">
+            <h2 class="card-title">RSS &amp; Atom Feeds</h2>
+          </div>
+          <p class="card-text">
+            Authored valid RSS and Atom XML feed documents with custom CSS
+            styling. Covers feed structure, channel metadata, and how
+            syndication formats differ from standard HTML.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="lab04/rss.xml" target="_blank" rel="noopener">RSS Feed</a>
+            <a class="btn btn-ghost" href="lab04/atom.xml" target="_blank" rel="noopener">Atom Feed</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+        <!-- LAB 5 -->
+        <article class="card">
+          <p class="lab-number">Lab 05</p>
+          <div class="lab-top">
+            <h2 class="card-title">JavaScript Form Validation</h2>
+          </div>
+          <p class="card-text">
+            A contact form with client-side validation using vanilla JavaScript.
+            Includes required field checks, a nickname reveal button, and
+            focus/blur behavior on the comments textarea.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="lab05/lab5.html" target="_blank" rel="noopener">Open Lab 5</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+        <!-- LAB 6 -->
+        <article class="card">
+          <p class="lab-number">Lab 06</p>
+          <div class="lab-top">
+            <h2 class="card-title">jQuery &amp; DOM Manipulation</h2>
+          </div>
+          <p class="card-text">
+            Interactive DOM manipulation using jQuery. Covers dynamic list
+            item creation, fade animations, class toggling, and event
+            delegation for elements added after page load.
+          </p>
+          <div class="lab-actions">
+            <a class="btn btn-ghost" href="lab06/lab6.html" target="_blank" rel="noopener">Open Lab 6</a>
+            <span class="status status-done">Complete</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <p class="footer-text">&copy; 2026 D'Andre Collins</p>
+      <p class="footer-text">Coursework &amp; Labs</p>
+    </div>
+  </footer>
+
+</body>
+</html>
